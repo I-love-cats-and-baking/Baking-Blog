@@ -1,0 +1,21 @@
+/* * {
+  border:1px solid black;
+} */
+h4{
+  font-family: 'Headland One', serif;
+  font-size: 25px;
+}
+
+.content-box{
+  margin:auto;
+  width: 70%;
+}
+
+.columns{
+  width: 50%;
+  float:left;
+}
+
+#idpicturewidth{
+  width:150%;
+}
