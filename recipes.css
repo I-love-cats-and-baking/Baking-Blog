@@ -3,12 +3,22 @@ h4{
   font-size: 25px;
 }
 
+#my-navbar {
+  background-color: #c5ddc9;
+  padding: 2%
+
+}
+
+#navbarDropdown {
+  color: #000000;
+}
+
 .content-box{
   margin: 5% auto;
   width: 70%;
 }
 
-.columns{
+.col {
   width: 50%;
   float:left;
 }
@@ -21,5 +31,16 @@ h4{
 #my-navbar {
   background-color: #c5ddc9;
   padding: 2%
-
 }
+
+footer {
+    display: flex;
+    padding: 10px 5px;
+    Border: 50px 0px 0px;
+    background-color: #d5e0f2;
+    color: #000000
+}
+
+footer p {
+    flex: 1;
+    margin: 0;

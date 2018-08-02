@@ -8,66 +8,177 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="earlgreymacarons.css">
+    <link rel="stylesheet" href="recipes.css">
+    <script type="text/javascript" src="app.js"></script>
   </head>
 
   <body>
+
+    <nav id="my-navbar" class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html">Recipes</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+              <!-- Cakes -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Cakes
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="japanesecheesecake.html">Japanese Cheesecake</a>
+              <a class="dropdown-item" href="lemonchiffoncake.html">Lemon Chiffon Cake</a>
+              <a class="dropdown-item" href="#">Sponge Cake</a>
+            </div>
+          </li>
+
+              <!-- Cookies -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Cookies
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="earlgreymacarons.html">Earl Grey Macarons</a>
+              <a class="dropdown-item" href="#">Meringues</a>
+              <a class="dropdown-item" href="#">Light Chocolate Chip Cookies</a>
+            </div>
+          </li>
+
+              <!-- Cupcakes -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Cupcakes
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Airy Vanilla Cupcakes</a>
+              <a class="dropdown-item" href="#">Chocolate Cupcakes</a>
+              <a class="dropdown-item" href="#">Lavander Cupcakes</a>
+            </div>
+          </li>
+
+            <!-- Bars -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Bars
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Pineapple Upside Down Mochi Bars</a>
+              <a class="dropdown-item" href="#">Chocolate Mochi Cake</a>
+              <a class="dropdown-item" href="#">Brownies</a>
+            </div>
+          </li>
+
+            <!-- Fillings -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Fillings
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="chocolatepiefilling.html">Chocolate Cream Pudding Pie Filling</a>
+              <a class="dropdown-item" href="#">Creme Brulee</a>
+              <a class="dropdown-item" href="#">Blueberry Pie Filling</a>
+            </div>
+          </li>
+
+            <!-- Frostings -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Fluffy Frostings
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Vanilla Buttercream Frosting</a>
+              <a class="dropdown-item" href="#">Whipped Honey Frosting</a>
+              <a class="dropdown-item" href="#">Cream Cheese Whipped Cream Frosting</a>
+            </div>
+          </li>
+
+            <!-- Extras -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Extras
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Virgin Mojito</a>
+              <a class="dropdown-item" href="#">Matcha Smoothie</a>
+              <a class="dropdown-item" href="#">Chai Latte</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav> <!-- NOTE: END OF NAVIGATION BAR -->
+
+
+
+
+
+    <br>
+
     <div style="text-align:center;">
-      <img src="http://www.splendidsweet.com/wp-content/uploads/2017/08/french-macaron-cookies-12-earl-grey-macaroons-gift-splendid-sweet-598885b21.jpg" alt="Earl grey macarons" style="padding:2%; width:50%; border:5px dashed #d5e0f2">
+      <img class=""src="http://www.splendidsweet.com/wp-content/uploads/2017/08/french-macaron-cookies-12-earl-grey-macaroons-gift-splendid-sweet-598885b21.jpg" alt="Earl Grey Macarons" style="padding:2%; width:50%; border:5px dashed #d5e0f2">
     </div>
 
-    <div  class="content-box">
+    <div class="content-box">
+
       <h2>Earl Grey Macarons</h2>
-        <!-- NOTE: Ingredients: Earl Grey Macarons -->
-        <br>
-        <div class="row">
-          <div class="col">
-            <ul>
-              <h4>Servings : 15 macarons</h4>
-              <br>
-              <h4>Ingredients</h4>
-              <div style="font-family: 'PT Serif', serif; font-size: 20px; line-height: 2;">
-                <li>3/4 cup almond flour</li>
-                <li>1 cup powdered sugar</li>
-                <li>2 Tbs of earl grey tealeaves</li>
-                <li>2 egg whites</li>
-                <li>1/4 cup caster sugar</li>
-                <li>1/4 tsp vanilla extract</li>
+      <!-- NOTE: Ingredients: earl grey macarons -->
+      <br>
+      <div class="row">
 
-              </div>
-            </ul>
-
-            <div id="picturewidth">
-              <img src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/102300756_Fold-batter-until-it-runs-in-ribbons_Photo-by-Meredith.jpg?itok=pM18Brgq" alt="Ribonning batter" style="padding:1%; width:50%; border:5px dashed #d5e0f2; margin:5% 0;">
-              <img src="https://i.pinimg.com/originals/43/3c/de/433cde81fcd48445738a89ed86c482bd.png" alt="Macaron template" style="padding:1%; width:50%; border:5px dashed #d5e0f2; margin:5% 0;">
-              <img src="http://1.bp.blogspot.com/_VhaDMqOQ9SM/S82a4ubDUhI/AAAAAAAAAD4/O59DpjyD9mU/s400/305279235_217206fe16.jpg" alt="macaron feet" style="padding:1%; width:50%; border:5px dashed #d5e0f2; margin:5% 0;">
+        <div class="col">
+          <ul>
+            <h4>Servings : 16 </h4>
+            <br>
+            <h4>Ingredients</h4>
+            <div style="font-family: 'PT Serif', serif; font-size: 20px; line-height: 2;">
+              <li>3/4 cup almond flour</li>
+              <li>1 cup powdered sugar</li>
+              <li>2 Tbsp of earl grey tealeaves</li>
+              <li>2 egg whites</li>
+              <li>1/4 cup caster sugar</li>
+              <li>1/4 tsp vanilla extract</li>
             </div>
+          </ul>
 
+          <div id="picturewidth">
+            <img src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/102300756_Fold-batter-until-it-runs-in-ribbons_Photo-by-Meredith.jpg?itok=pM18Brgq" alt="Ribonning batter" style="padding:1%; width:50%; border:5px dashed #d5e0f2; margin:5% 0;">
+            <img src="https://i.pinimg.com/originals/43/3c/de/433cde81fcd48445738a89ed86c482bd.png" alt="Macaron template" style="padding:1%; width:50%; border:5px dashed #d5e0f2; margin:5% 0;">
+            <img src="http://1.bp.blogspot.com/_VhaDMqOQ9SM/S82a4ubDUhI/AAAAAAAAAD4/O59DpjyD9mU/s400/305279235_217206fe16.jpg" alt="macaron feet" style="padding:1%; width:50%; border:5px dashed #d5e0f2; margin:5% 0;">
           </div>
-          <!-- NOTE: Directions: Earl Grey Macarons -->
-          <div class="col">
-            <ol>
-              <h4>Directions</h4>
-              <div style="font-family: 'PT Serif', serif; font-size: 20px; line-height: 2;">
-                <li>Put the almond flour and powdered sugar in a food processor and pulse 3 times. You cannot pulse more than 3 times or else the almond oil will cause the powdered sugar to clump.</li>
-                <li>In a medium mixing bowl beat the egg whites with an electric mixer until soft peaks form. Then gradually pour in the sugar while mixing.</li>
-                <li>Add the vanilla and continue to beat</li>
-                <li>The egg whites should now form glossy but stiff peaks. Take about 1/3 of the mixture and fold it in. You can fold the first third quite vigorously, but you should be gentle when folding in the rest.</li>
-                <li>You can now add coloring if you would like to.
-                <li>When the batter is ready it should ribbon off of your spatula. Try to avoid overfolding.</li>
-                <li>Using parchment paper, pipe out your macarons onto a template, 3/4-inch round circles, approximately 1 inch apart,</li>
-                <li>Tap the jellyroll pan to release any air bubbles, you may need to use a toothpick to poke any unpopped bubbles.</li>
-                <li>Leave out the macarons to let a thin film develop over the top of the macarons, this helps the macaron develop its feet.</li>
-                <li>Preheat the oven to 325&#176;F</li>
-                <li>Bake the macarons for 5 minutes, then rotate the pan 180&#176; and bake for an additional 5 minutes.</li>
-                <li>You want to transfer the macarons to a plate while they are still slightly warm.</li>
-                <li>Fill your macarons with lemon curd or lemon buttercream to get the best results.</li>
-              </div>
-            </ol>
-          </div>
+
+        </div>
+
+
+        <!-- NOTE: Directions: earl grey macarons -->
+        <div class="col">
+          <ol>
+            <h4>Directions</h4>
+            <div style="font-family: 'PT Serif', serif; font-size: 20px; line-height: 2;">
+              <li>Put the almond flour and powdered sugar in a food processor and pulse 3 times. You cannot pulse more than 3 times or else the almond oil will cause the powdered sugar to clump.</li>
+              <li>In a medium mixing bowl beat the egg whites with an electric mixer until soft peaks form. Then gradually pour in the sugar while mixing.</li>
+              <li>Add the vanilla and continue to beat</li>
+              <li>The egg whites should now form glossy but stiff peaks. Take about 1/3 of the mixture and fold it in. You can fold the first third quite vigorously, but you should be gentle when folding in the rest.</li>
+              <li>You can now add coloring if you would like to.
+              <li>When the batter is ready it should ribbon off of your spatula. Try to avoid overfolding.</li>
+              <li>Using parchment paper, pipe out your macarons onto a template, 3/4-inch round circles, approximately 1 inch apart,</li>
+              <li>Tap the jellyroll pan to release any air bubbles, you may need to use a toothpick to poke any unpopped bubbles.</li>
+              <li>Leave out the macarons to let a thin film develop over the top of the macarons, this helps the macaron develop its feet.</li>
+              <li>Preheat the oven to 325&#176;F</li>
+              <li>Bake the macarons for 5 minutes, then rotate the pan 180&#176; and bake for an additional 5 minutes.</li>
+              <li>You want to transfer the macarons to a plate while they are still slightly warm.</li>
+              <li>Fill your macarons with lemon curd or lemon buttercream to get the best results.</li>
+            </div>
+          </ol>
+        </div>
+
       </div>
 
+    </div>
 
+    <footer>
+      <p>@SophisticatedSweets</p>
+    </footer>
 
   </body>
-</html>
