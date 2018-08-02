@@ -1,6 +1,3 @@
-console.log('app.js sanity check');
-
-
 $(document).ready(function(){
 
   $('h1').click(function(){
